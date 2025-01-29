@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Background Image Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "BebasNeue";
+        src: url("BebasNeue-Regular.woff") format("woff");
+      }
+
+      body {
+        background-image: url("bkg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        color: white;
+        position: relative;
+        font-family: "BebasNeue", sans-serif;
+      }
+
+      .evosolar {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .right-content {
+        position: absolute;
+        align-items: center;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .coming-soon {
+        display: inline-block;
+        background-color: rgb(255, 98, 0);
+        padding: 10px 20px;
+        margin-top: 10px;
+        font-size: 3rem;
+        font-weight: bold;
+        border-radius: 5px;
+        letter-spacing: 2px;
+      }
+
+      .savings-text {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      @media (max-width: 768px) {
+        .evosolar {
+          position: static;
+          text-align: center;
+          margin-top: 120px;
+        }
+
+        .right-content {
+          position: static;
+          text-align: center;
+          transform: none;
+          margin-top: 160px;
+        }
+
+        .evosolar {
+          font-size: 2.5rem;
+        }
+
+        .coming-soon {
+          font-size: 2.2rem;
+        }
+
+        .savings-text {
+          font-size: 2.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="evosolar">EvoSolar</div>
+
+    <div class="right-content">
+      <div class="savings-text">TRANSFORM SUNLIGHT<br />INTO SAVINGS!</div>
+      <div class="coming-soon">COMING SOON</div>
+    </div>
+  </body>
+</html>
+
